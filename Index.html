@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admiration Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/hero.jpg") center/cover;
+}
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+margin:20px 0;
+font-size:1.1rem;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#ff4d6d;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff1f4d;
+transform:scale(1.05);
+}
+
+section{
+padding:70px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:#ffd166;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:18px;
+transition:.4s;
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.review{
+background:#1e293b;
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#020617;
+}
+
+@media(max-width:600px){
+
+header h1{
+font-size:2.2rem;
+}
+
+.gallery img{
+height:250px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div>
+
+<h1>✨ A Tribute to Your Style ✨</h1>
+
+<p>
+Every picture tells a story of confidence, elegance and personality.
+This page celebrates every amazing moment captured.
+</p>
+
+<a href="#gallery" class="btn">View Gallery</a>
+
+</div>
+
+</header>
+
+<section id="gallery">
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/pic1.jpg">
+
+<img src="images/pic2.jpg">
+
+<img src="images/pic3.jpg">
+
+<img src="images/pic4.jpg">
+
+<img src="images/pic5.jpg">
+
+<img src="images/pic6.jpg">
+
+<img src="images/pic7.jpg">
+
+<img src="images/pic8.jpg">
+
+<img src="images/pic9.jpg">
+
+<img src="images/pic10.jpg">
+
+<img src="images/pic11.jpg">
+
+<img src="images/pic12.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Highlights</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🔥 Signature Style</h3>
+<p>Every outfit reflects confidence and personality.</p>
+</div>
+
+<div class="card">
+<h3>📸 Photogenic</h3>
+<p>Looks amazing from every angle and every pose.</p>
+</div>
+
+<div class="card">
+<h3>😎 Confidence</h3>
+<p>A smile and attitude that instantly grab attention.</p>
+</div>
+
+<div class="card">
+<h3>✨ Memorable</h3>
+<p>Every picture becomes a favorite memory.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Your smile makes every picture brighter."</p>
+<b>- Biggest Admirer ❤️</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Natural confidence and amazing style."</p>
+<b>- Fan</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Every photo deserves appreciation."</p>
+<b>- Someone Who Loves Photography</b>
+</div>
+
+</section>
+
+<section style="text-align:center">
+
+<h2>Final Appreciation</h2>
+
+<p style="max-width:700px;margin:auto;font-size:18px;line-height:1.8">
+Some people simply look good in photos.
+You make every frame feel special with your confidence,
+style and genuine smile.
+Keep shining and creating unforgettable memories.
+</p>
+
+<br><br>
+
+<a href="#" class="btn">❤️ Stay Awesome ❤️</a>
+
+</section>
+
+<footer>
+
+Made with ❤️ and admiration
+
+</footer>
+
+</body>
+</html>
